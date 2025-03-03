@@ -5,12 +5,14 @@
   "scripts": {
     "next-dev": "cd apps/next-app && pnpm dev",
     "remix-dev": "cd apps/remix-app && pnpm dev",
+    "next-build": "cd apps/next-app && pnpm build",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.66.1",
     "@types/node": "^20",
     "@workspace/eslint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
@@ -23,6 +25,9 @@
     "node": ">=20"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^15.2.0",
+    "@tanstack/react-query-devtools": "^5.66.11",
+    "@tanstack/react-query-next-experimental": "^5.66.11",
     "dotenv": "^16.4.7"
   }
 }
