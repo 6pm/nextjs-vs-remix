@@ -20,6 +20,8 @@ export async function signOut() {
 
     return await resp.json();
   } catch (error) {
+    console.log("signOut error", error);
+
     return new Error("err fetching games");
   }
 }

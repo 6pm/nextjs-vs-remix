@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { ThemeProvider } from "next-themes"
+import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
 
 export function NextThemesProvider({ children }: { children: ReactNode }) {
@@ -12,7 +12,7 @@ export function NextThemesProvider({ children }: { children: ReactNode }) {
       disableTransitionOnChange
       enableColorScheme
     >
-        {children}
+      {children}
     </ThemeProvider>
-  )
+  );
 }

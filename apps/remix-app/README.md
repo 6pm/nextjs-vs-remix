@@ -1,10 +1,13 @@
 # Setup
+
 1. Install dependencies. pnpm MUST be used:
+
 ```sh
 pnpm  i
 ```
 
 2. Create .env file with this variables:
+
 ```sh
 BRAND_NAME=
 GATEWAY=
@@ -51,7 +54,9 @@ Make sure to deploy the output of `npm run build`
 This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
 
 ## Adding new component from shadcn
+
 Add shadcn component:
+
 ```sh
 pnpm dlx shadcn@canary add [COMPONENT]
 ```

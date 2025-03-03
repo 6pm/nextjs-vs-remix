@@ -12,7 +12,7 @@ type Props = {
   appName?: string;
 };
 
-export function SiteHeader({appName}: Props) {
+export function SiteHeader({ appName }: Props) {
   const { toggleSidebar } = useSidebar();
 
   return (
@@ -28,18 +28,19 @@ export function SiteHeader({appName}: Props) {
         </Button>
         <Separator orientation="vertical" className="mr-2 h-4 md:hidden" />
 
-        <a href="/">{appName || 'LOGO'}</a>
+        <a href="/">{appName || "LOGO"}</a>
 
         <SearchForm className="w-full sm:ml-auto sm:w-auto" />
-        
+
         <div>
-          <a className={buttonVariants({ variant: "default", size: "sm" })} href="/login">  
+          <a
+            className={buttonVariants({ variant: "default", size: "sm" })}
+            href="/login"
+          >
             Login
           </a>
         </div>
       </div>
-
-      
     </header>
   );
 }

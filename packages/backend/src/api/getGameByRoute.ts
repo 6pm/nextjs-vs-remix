@@ -1,8 +1,7 @@
 import { v4 as uuid } from "uuid";
 
-
 export async function getGameByRoute(route: string) {
-  const url = `${process.env.GATEWAY}/v1/get-product?brandName=${process.env.BRAND_NAME}&route=${route}`
+  const url = `${process.env.GATEWAY}/v1/get-product?brandName=${process.env.BRAND_NAME}&route=${route}`;
 
   const resp = await fetch(url, {
     method: "get",
@@ -13,7 +12,7 @@ export async function getGameByRoute(route: string) {
       "X-PLATFORM": "web",
       "X-Trace-Id": uuid(),
     },
-  })
+  });
 
-  return await resp.json()
+  return await resp.json();
 }

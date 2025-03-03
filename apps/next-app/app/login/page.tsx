@@ -1,3 +1,3 @@
-import LoginPage from "@workspace/ui/app/login/page"
+import LoginPage from "@workspace/ui/app/login/page";
 
-export default LoginPage
+export default LoginPage;

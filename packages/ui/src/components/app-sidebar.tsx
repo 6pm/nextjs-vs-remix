@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
   BookOpen,
   Bot,
@@ -11,18 +11,18 @@ import {
   Send,
   Settings2,
   SquareTerminal,
-} from "lucide-react"
+} from "lucide-react";
 
-import { NavMain } from "@workspace/ui/components/nav-main"
-import { NavProjects } from "@workspace/ui/components/nav-projects"
-import { NavSecondary } from "@workspace/ui/components/nav-secondary"
-import { NavUser } from "@workspace/ui/components/nav-user"
+import { NavMain } from "@workspace/ui/components/nav-main";
+import { NavProjects } from "@workspace/ui/components/nav-projects";
+import { NavSecondary } from "@workspace/ui/components/nav-secondary";
+import { NavUser } from "@workspace/ui/components/nav-user";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
-} from "@workspace/ui/components/sidebar"
+} from "@workspace/ui/components/sidebar";
 
 const data = {
   user: {
@@ -146,7 +146,7 @@ const data = {
       icon: Map,
     },
   ],
-}
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -154,8 +154,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       className="top-[--header-height] !h-[calc(100svh-var(--header-height))]"
       {...props}
     >
-      <SidebarHeader>
-      </SidebarHeader>
+      <SidebarHeader></SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
         <NavProjects projects={data.projects} />
@@ -165,5 +164,5 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavUser user={data.user} />
       </SidebarFooter>
     </Sidebar>
-  )
+  );
 }

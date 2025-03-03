@@ -18,8 +18,6 @@ export default function ContentPlaceholder() {
         <div className="aspect-video rounded-xl bg-muted/50" />
         <div className="aspect-video rounded-xl bg-muted/50" />
       </div>
-    
-      
     </>
   );
 }

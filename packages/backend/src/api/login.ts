@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import { LoginForm } from "@workspace/backend/types.ts"
+import { LoginForm } from "@workspace/backend/types.ts";
 
 export function login(formData: LoginForm) {
   const headers = {
@@ -16,4 +16,3 @@ export function login(formData: LoginForm) {
     body: JSON.stringify(formData),
   });
 }
-

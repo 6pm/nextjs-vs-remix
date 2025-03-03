@@ -19,11 +19,13 @@ export async function getAccountInfo() {
           headers: { messageId: uid, timestamp: Date.now() },
           body: { type: "GetAccountInfoRequest" },
         }),
-      }
+      },
     );
 
     return await resp.json();
   } catch (error) {
+    console.log("getAccountInfo error", error);
+
     return new Error("err fetching games");
   }
 }

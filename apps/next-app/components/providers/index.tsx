@@ -7,9 +7,7 @@ import type { ReactNode } from "react";
 export function Providers({ children }: { children: ReactNode }) {
   return (
     <NextThemesProvider>
-      <ReactQueryProvider>
-        {children}
-      </ReactQueryProvider>
+      <ReactQueryProvider>{children}</ReactQueryProvider>
     </NextThemesProvider>
   );
 }

@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import { RegistrationForm } from "@workspace/backend/types.ts"
+import { RegistrationForm } from "@workspace/backend/types.ts";
 
 export default function register(formData: RegistrationForm) {
   const headers = {
@@ -16,4 +16,3 @@ export default function register(formData: RegistrationForm) {
     body: JSON.stringify(formData),
   });
 }
-

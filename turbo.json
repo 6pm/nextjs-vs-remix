@@ -1,6 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["IMG_ORIGIN", "ANALYZE"],
+  "globalEnv": ["IMG_ORIGIN", "ANALYZE", "GATEWAY", "BRAND_NAME", "SERVER_FETCH_URL"],
   "ui": "tui",
   "tasks": {
     "build": {

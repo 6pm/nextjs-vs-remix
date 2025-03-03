@@ -1,21 +1,20 @@
-
 export type RegistrationForm = {
-  firstName: string
-  lastName: string
-  email: string
-  password: string
-  timezone: string
-  lang: string
-  brandName: string
-}
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  timezone: string;
+  lang: string;
+  brandName: string;
+};
 
 export type LoginForm = {
-  email: string
-  password: string
-  timezone: string
-  lang: string
-  brandName: string
-}
+  email: string;
+  password: string;
+  timezone: string;
+  lang: string;
+  brandName: string;
+};
 
 export type Currencies = "GC" | "SC" | "USD";
 
@@ -180,12 +179,12 @@ export type User = {
 };
 
 export type TokenData = {
-  type: 'GetTemporaryTokenResponse'
-  counterparty: string
-  token: string
-  subject: string
-  country: string
-}
+  type: "GetTemporaryTokenResponse";
+  counterparty: string;
+  token: string;
+  subject: string;
+  country: string;
+};
 
 export interface GameData {
   animatedTile: boolean;
@@ -203,7 +202,7 @@ export interface GameData {
 
 export interface GameCategory {
   code: string;
-  title:string;
+  title: string;
   index: number;
   icon: string;
   route: string;
@@ -212,4 +211,4 @@ export interface GameCategory {
   type: string;
   promotionUrl: string;
   products: GameData[];
-};
+}

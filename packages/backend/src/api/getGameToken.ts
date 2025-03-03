@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import { TokenData } from "@workspace/backend/types.ts"
+import { TokenData } from "@workspace/backend/types.ts";
 
 export async function getGameToken({
   code,
@@ -32,10 +32,10 @@ export async function getGameToken({
           currency,
         },
       }),
-    }
+    },
   );
 
   const { body } = await resp.json();
 
-  return body
+  return body;
 }

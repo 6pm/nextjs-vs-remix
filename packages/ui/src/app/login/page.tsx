@@ -1,4 +1,4 @@
-import { LoginForm } from "@workspace/ui/components/login-form"
+import { LoginForm } from "@workspace/ui/components/login-form";
 
 export default function LoginPage() {
   return (
@@ -10,5 +10,5 @@ export default function LoginPage() {
         <LoginForm />
       </div>
     </div>
-  )
+  );
 }

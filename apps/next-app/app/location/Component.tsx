@@ -45,7 +45,7 @@ const Component: React.FC = () => {
         enableHighAccuracy: true, // If you want the best possible results
         timeout: 5000, // Time out after 5 seconds
         maximumAge: 0, // Do not use cached location
-      }
+      },
     );
   };
 
